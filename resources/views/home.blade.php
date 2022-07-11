@@ -12,13 +12,15 @@
   <ul>
     @foreach ($movies as $movie)
     <div class="cards-container">
-      <div class="card-box">
-        <h2>Titolo: {{$movie->title}}</h2>
-        <h4>Titolo originale: {{$movie->original_title}}</h4>
-        <h5>Nazionalità: {{$movie->nationality}}</h5>
-        <h5>Data uscita: {{$movie->date}}</h5>
-        <h5>Voto: {{$movie->vote}}</h5>
-      </div>
+      <a href="{{route('show', $movie->id)}}">
+        <div class="card-box">
+          <h2>Titolo: {{$movie->title}}</h2>
+          <h4>Titolo originale: {{$movie->original_title}}</h4>
+          <h5>Nazionalità: {{$movie->nationality}}</h5>
+          <h5>Data uscita: {{$movie->date}}</h5>
+          <h5>Voto: {{$movie->vote}}</h5>
+        </div>
+      </a>
     </div>
     @endforeach
   </ul>

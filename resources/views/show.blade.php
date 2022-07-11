@@ -7,6 +7,7 @@
   <title>Document</title>
 </head>
 <body>
+  <button><a href="{{route('homepage')}}">HOMEPAGE</a></button>
   <h1>{{$movie->title}}</h1>
   <h2>{{$movie->vote}}</h2>
 </body>
