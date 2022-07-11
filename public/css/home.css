@@ -1,0 +1,21 @@
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    color: red;
+}
+
+.cards-container {
+    margin: auto;
+}
+.card-box {
+    border: 1px solid #000;
+    margin: 1rem 2rem;
+    text-align: center;
+}
